@@ -13,11 +13,9 @@
     {% for objects in post_list %}
 
         <a href="{% url 'detail' objects.pk %}">{{objects.titulo}}</a>
-        
-
         <hr>
-
     {% endfor %}
         
+    <a href="{% url 'create' %}">Crear</a>
 </body>
 </html>
