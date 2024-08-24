@@ -7,11 +7,12 @@
 </head>
 <body>
 
-        <h1>{{object.titulo}}</h1>
-        <br>
-        <p>{{post.descripcion}}</p>
+    <form method="post">
+        {% csrf_token %}
 
-        <a href="{% url 'delete' post.pk %}">borrar</a>
-        
+        <input type="submit" value="borrar">
+
+    </form>
+    
 </body>
 </html>
